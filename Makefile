@@ -6,7 +6,7 @@ LEVEL ?= 1
 COMMON_SRC = $(SRC)/badge.c $(SRC)/policy.c $(SRC)/enrollment.c
 COMMON_DEFS = -DTAPTRACE_BADGE_NO_MAIN -DTAPTRACE_POLICY_NO_MAIN -DTAPTRACE_ENROLLMENT_NO_MAIN
 
-.PHONY: all test run run-hardened attack benchmark demo demo-hardened hint clean
+.PHONY: all test run run-hardened attack benchmark demo demo-hardened hint submit-flag clean
 
 all: taptrace_badge_test taptrace_policy_test taptrace_enrollment_test taptrace_server taptrace_server_hardened
 
@@ -22,8 +22,8 @@ taptrace_enrollment_test: $(COMMON_SRC)
 taptrace_server: $(COMMON_SRC) $(SRC)/server.c
 	$(CC) $(CFLAGS) $(COMMON_DEFS) $(COMMON_SRC) $(SRC)/server.c -o taptrace_server
 
-taptrace_server_hardened: $(COMMON_SRC) $(SRC)/server_hardened.c
-	$(CC) $(CFLAGS) $(COMMON_DEFS) $(COMMON_SRC) $(SRC)/server_hardened.c -o taptrace_server_hardened
+taptrace_server_hardened: $(COMMON_SRC) $(SRC)/server.c
+	$(CC) $(CFLAGS) $(COMMON_DEFS) -DTAPTRACE_HARDENED $(COMMON_SRC) $(SRC)/server.c -o taptrace_server_hardened
 
 test: taptrace_badge_test taptrace_policy_test taptrace_enrollment_test taptrace_server taptrace_server_hardened
 	./taptrace_badge_test
@@ -52,6 +52,9 @@ benchmark: taptrace_benchmark.py
 
 hint: taptrace_hints.py
 	python3 taptrace_hints.py --level $(LEVEL)
+
+submit-flag: taptrace_submit_flag.py
+	python3 taptrace_submit_flag.py $(VECTOR)
 
 clean:
 	rm -f taptrace_badge_test taptrace_policy_test taptrace_enrollment_test taptrace_server taptrace_server_hardened
