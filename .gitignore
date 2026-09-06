@@ -1,0 +1,11 @@
+taptrace_badge_test
+taptrace_policy_test
+taptrace_enrollment_test
+taptrace_server
+taptrace_server_hardened
+taptrace_enrollment
+taptrace_policy
+*.o
+__pycache__/
+*.pyc
+*.npz
