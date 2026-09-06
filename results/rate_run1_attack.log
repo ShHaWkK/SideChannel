@@ -1,0 +1,34 @@
+TAPTRACE - attaque temporelle
+Badge cible : 1
+
+byte0 : A=rang1=a5 marge=51.0, B=rang1=a5 marge=35.5
+byte0 -> consensus a5 (accord 2/2)
+byte 0: a5
+byte1 : A=rang1=b4 marge=25.5, B=rang1=b4 marge=40.0
+byte1 -> consensus b4 (accord 2/2)
+byte 1: b4
+byte2 : A=rang1=f3 marge=25.5, B=rang1=f3 marge=29.0
+byte2 -> consensus f3 (accord 2/2)
+byte 2: f3
+byte3 : A=rang1=7f marge=44.5, B=rang1=7f marge=41.0
+byte3 -> consensus 7f (accord 2/2)
+byte 3: 7f
+byte4 : A=rang1=c7 marge=70.0, B=rang1=c7 marge=70.0
+byte4 -> consensus c7 (accord 2/2)
+byte 4: c7
+byte5 : A=rang1=c2 marge=50.0, B=rang1=c2 marge=49.2
+byte5 -> consensus c2 (accord 2/2)
+byte 5: c2
+byte6 : A=rang1=cf marge=43.5, B=rang1=cf marge=49.0
+byte6 -> consensus cf (accord 2/2)
+byte 6: cf
+byte7 : A=rang1=0b marge=34.5, B=rang1=0b marge=26.5
+byte7 -> consensus 0b (accord 2/2)
+byte 7: 0b
+
+Vecteur d'acces recupere :
+a5 b4 f3 7f c7 c2 cf 0b
+
+requetes : 45569600
+secondes_ecoulees : 658.8
+accords : byte0=2/2, byte1=2/2, byte2=2/2, byte3=2/2, byte4=2/2, byte5=2/2, byte6=2/2, byte7=2/2

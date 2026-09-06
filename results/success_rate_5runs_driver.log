@@ -1,0 +1,11 @@
+=== run1 : demarrage instance fraiche (port 9500) ===
+=== run2 : demarrage instance fraiche (port 9500) ===
+=== run3 : demarrage instance fraiche (port 9500) ===
+=== run4 : demarrage instance fraiche (port 9500) ===
+=== run5 : demarrage instance fraiche (port 9500) ===
+run1 : recovered=[a5 b4 f3 7f c7 c2 cf 0b] verdict=SUCCESS requetes=45569600 secondes=658.8
+run2 : recovered=[ec 69 48 8d 11 d3 a7 13] verdict=SUCCESS requetes=45569600 secondes=643.2
+run3 : recovered=[90 2d c3 7c ea 7d 98 e4] verdict=SUCCESS requetes=45569600 secondes=639.2
+run4 : recovered=[bd 10 37 cb 22 21 4f e1] verdict=SUCCESS requetes=45569600 secondes=634.9
+run5 : recovered=[ad cd 59 43 fc 45 5a 1e] verdict=SUCCESS requetes=45569600 secondes=641.6
+=== termine ===

@@ -1,0 +1,24 @@
+[!] MODE DEV : isolation uniquement procedurale
+[*] mode silencieux actif, aucun log par requete
+[*] canal interne pret : /tmp/taptrace/admin.sock
+[*] badge provisionne, id_badge=1, statut actif
+[*] badge provisionne, id_badge=2, statut revoque
+[*] badge provisionne, id_badge=3, statut expire
+[*] en ecoute sur 127.0.0.1:9500
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] client ferme
+[*] admin : requete id_badge=1
